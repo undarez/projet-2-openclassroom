@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --font-family-1:'Raleway', sans-serif;
+    --text-color-1:#191919;
+    --text-color-2:#0065fc;
+    --text-color-3:#deebfc;
+    --bacground-1:#f2f2f2;
+    --p-font:17px;
+    --p-font-2:19px;
+    --h2-font:20px;
+}
+
+body{
+    background: var(--bacground-1);
+    display: block;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+/* logo taille */
+header .navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 60px 100px;
+    margin-right: 40px;
+    display: flex;
+    justify-content:flex-end;
+}
+
+header ul{
+    margin-left: 40px;
+}
+header ul li{
+    font-family: var(--font-family-1);
+    font-weight: 600;
+}
+
+header ul li a{
+    color: var(--text-color-1);
+    font-size: var(--p-font);
+}
+
+/* intéractivité navigation passage souris */
+header ul li a:hover{
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.25s;
+    border-top: 4px solid #0065fc;
+    padding-top: 56px;
+    text-shadow:  10px 15px 30px rgb(0,101,255);
+    font-weight: 800;
+    color: var(--text-color-2);
+}
+
+.logo{
+    margin: 40px 40px;
+}
+
+.logo img{
+    width: 10%;
+}
+/*----fin header----*/
+
+/*-- ----debut section recherche et filtres---- --*/
+.titre{
+    margin: 0 40px;
+    font-family: var(--font-family-1);
+    color: var(--text-color-1);
+    font-weight: 700;
+}
+
+.slogan{
+    margin: 0 40px;
+    margin-top: 13px;
+    font-size: var(--p-font-2);
+    font-family: var(--font-family-1);
+    color: var(--text-color-1);
+    font-weight: 500;
+}
+
+.geoloc-bordure{
+    display: flex;
+}
+
