@@ -29,6 +29,10 @@ body {
     justify-content: space-between;
 }
 
+a {
+    color: var(--text-color-1);
+}
+
 /* logo taille */
 
 
@@ -173,6 +177,7 @@ header ul li a:hover {
 .barre-filtre {
     padding-top: 25px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -241,8 +246,250 @@ header ul li a:hover {
     padding: 10px;
 }
 
+/* positionnement du conteneur */
+.hebergement-flex {
+    width: 100%;
+    margin-top: 35px;
+    padding: 2rem;
+
+}
+
+/* background gris taille */
+.flex-grid {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    padding: 20px 0;
+    border-radius: 20px;
+    gap: 30px;
+
+
+}
+
+/* conteneur des vignette */
+.container-grid-75 {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--etoile-grise);
+    gap: 50px;
+
+}
+
+/* hebergement a marseille h1 */
+.marseille {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+    font-family: var(--font-family-1);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.carte-75 {
+    width: 28%;
+    background: white;
+    padding: 5px;
+    border-radius: 20px;
+    transition: all .35s;
+    border: 1px solid #c9d8ee;
+}
+
+/* taille vignette 4 */
+.container-grid-75 .carte-75 #annie {
+    height: 320px;
+}
+
+/* taille vignette 6 */
+.container-grid-75 .carte-75 #febrian-m6 {
+    height: 320px;
+}
+
+/* vignette 4 taille */
+/* .container-grid-75 .carte-75 #annie{
+    width: 28%;
+} */
+/* annimation des vignettes */
+.carte-75:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px #2727278e;
+    transition: all 0.36s;
+}
+
+.img-content {
+    width: 100%;
+    height: 100%;
+}
+
+/* taille de l'image */
+.img-content img {
+    width: 100%;
+    height: 50%;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.desc {
+    font-family: var(--font-family-1);
+}
+
+.desc h2 {
+    padding: 5px;
+    font-size: 35px;
+}
+
+.desc p {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.etoile-bleu {
+    font-family: var(--font-family-1);
+    font-size: 17px;
+    color: var(--text-color-2);
+    padding: 0 20px;
+
+}
+
+/* conteneur les plus populaire le fond gris */
+.container-grid-25 {
+    width: 30%;
+    height: auto;
+    padding: 15px;
+    border-radius: 20px;
+    background: var(--etoile-grise);
+}
+/* titre les plus populaire */
+.container-grid-25 .populaire {
+    font-family: var(--font-family-1);
+    font-weight: 700;
+    font-size: 30px;
+    
+
+}
+/* les 3 vignettes */
+.grid-25 {
+    display: flex;
+    /* grid-template-columns: repeat(1,3fr); */
+    width: 100%;
+    height: 100%;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-25 a{
+    height: 30%;
+    width: 100%;
+}
+
+ .carte-25{
+   display: flex;
+   width: 100%;
+   height: 100%;
+   padding: 5px;
+   background: var(--bacground-1);
+   border-radius: 20px;
+   flex-direction: row;
+} 
+
+.carte-25 .img-content {
+    width: 50%;
+    height: 100%;
+    
+}
+
+.carte-25 .img-content img{
+    border-radius: 20px 0 0 20px;
+    width: 100%;
+    height: 100%;
+}
+.carte-25 .desc {
+    width: 50%;
+    height: 100%;
+    
+}
+.carte-25:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px #2727278e;
+    transition: all 0.36s;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* les vignettes 25% */
+
+
+/* conteneur le splus populaires */
+/* .container-grid-25{
+    width: 25%;
+    height:auto ;
+    padding: 20px;
+    border-radius: 20px;
+    gap: ;
+    background: var(--etoile-grise);
+} */
+
+
+/* les vignette 25% */
+/* .grid-25{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.grid-25 .img-content{
+    width: 50%;
+    height: 100%;
+}
+
+.grid-25 .carte-75{
+    display: flex;
+    width:100%;
+    
+    flex-direction: row;
+    
+
+    
+}
+/* reglage taille image febrian  
+.grid-25 .carte-75 #febrian{
+    width: 560px;
+    height: 200px;
+} */
+
+
+
+
+
+
 
 /* debut section hebergement */
+/* .flex{
+    display: flex;
+}
+
+
 .hebergement-hotel {
     position: relative;
     width: 75%;
@@ -293,7 +540,7 @@ header ul li a:hover {
 }
 
 /* transform scale permet de zoomer (:hover) */
-.carte:hover {
+/* .carte:hover {
     transform: scale(1.05);
     box-shadow: 0 0 35px #2727278e;
 }
@@ -326,18 +573,18 @@ header ul li a:hover {
     color: var(--text-color-2);
     padding: 0 20px;
     
-}
+} */
 /* changement de couleur etoile en gris */
-.etoile-grise{
+/* .etoile-grise{
     font-family: var(--font-family-1);
     font-size: 17px;
     color: var(--etoile-grise);
-}
+} */
 
 /* image 2  vignette */
 
 
-.carte{
+/* .carte{
     width: 33%;
     height: 400px;
     background: white;
@@ -386,11 +633,11 @@ header ul li a:hover {
     color: var(--text-color-2);
     padding:  20px;
     
-}
+} */
 
 /* vignette 3 */
 
-.carte{
+/* .carte{
     width: 33%;
     height: 400px;
     background: white;
@@ -439,10 +686,216 @@ header ul li a:hover {
     color: var(--text-color-2);
     padding:  20px;
     
-}
+} */
+/* fin section 1 /3 premiere vignettes */
 /* fin section 1 /3 premiere vignettes */
 
-/* debut section 1 / vignette 4 5 6 */
+/* debut section 1 images 4 5 et 6  */
+
+/* .container-img-4{
+    width: 100%;
+    height: 190px;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    cursor: pointer;
+    background-image: url(images/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+} */
+/* vignette 4 */
+/* .carte-4{
+    width: 33%;
+    height: 400px;
+    margin-left: 22px;
+    background: white;
+    padding: 5px;
+    border-radius: 20px;
+    transition: all .35s;
+    border: 1px solid #c9d8ee;
+
+}
+.carte-4:hover {
+    transform: scale(1.05);
+    transition: all 0.35s;
+    background: var(--text-color-3);
+    box-shadow: 0 0 35px #2727278e;
+}
+
+.container-img-4{
+    width: 100%;
+    height: 190px;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    cursor: pointer;
+    background-image: url(images/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+
+.desc-4 {
+    font-family: var(--font-family-1);
+
+}
+
+.desc-4 h2 {
+    padding: 5px;
+    font-size: 35px;
+}
+
+.desc-4 p {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 30px 10px ;
+}
+
+.etoile-bleu-4{
+    font-family: var(--font-family-1);
+    font-size: 17px;
+    color: var(--text-color-2);
+    padding: 20px 15px;
+} */
+/* vignette 5 */
+
+/* .carte-5{
+    width: 33%;
+    height: 400px;
+    background: white;
+    padding: 5px;
+    border-radius: 20px;
+    transition: all .35s;
+    border: 1px solid #c9d8ee;
+
+}
+
+.container-img-5{
+    width: 100%;
+    height: 190px;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    cursor: pointer;
+    background-image: url(images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+.carte-5:hover {
+    transform: scale(1.05);
+    transition: all 0.35s;
+    background: var(--text-color-3);
+    box-shadow: 0 0 35px #2727278e;
+}
+
+.decs-5 {
+    font-family: var(--font-family-1);
+
+}
+
+.desc-5 h2 {
+    padding: 5px;
+    font-size: 35px;
+}
+
+.desc-5 p {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 30px 10px ;
+} */
+
+/* vignette 6 */
+
+/* .carte-6{
+    width: 33%;
+    height: 400px;
+    margin-right: 20px;
+    background: white;
+    padding: 5px;
+    border-radius: 20px;
+    transition: all .35s;
+    border: 1px solid #c9d8ee;
+
+}
+.carte-6:hover {
+    transform: scale(1.05);
+    transition: all 0.35s;
+    background: var(--text-color-3);
+    box-shadow: 0 0 35px #2727278e;
+}
+
+.container-img-6{
+    width: 100%;
+    height: 190px;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    cursor: pointer;
+    background-image: url(images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+
+.desc-6 {
+    font-family: var(--font-family-1);
+
+}
+
+.desc-6 h2 {
+    padding: 5px;
+    font-size: 35px;
+}
+
+.desc-6 p {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 30px 10px ;
+} */
+
+/* fin vignette section 1 */
+/* .afficher{
+    font-family: var(--font-family-1);
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px;
+
+} */
+
+/* debut section 25 */
+/* .populaire{
+    width: 30%;
+    height: auto;
+    padding: 15px;
+    border-radius: 15px;
+    background: #f2f2f2;
+}
+
+.grille-25{
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.carte-populaire{
+    width: 30%;
+    min-width: 205px;
+    height: 250px;
+    background: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    transition: 0.3s all ease-in-out;
+}
+
+.container-image-7{
+    width: 100%;
+    height: 190px;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    cursor: pointer;
+    background-image: url(images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+ */
+
 
 /* separation css et responsive */
 
