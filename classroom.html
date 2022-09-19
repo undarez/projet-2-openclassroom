@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="classroom.css">
+    <!-- lien font awaesome pour icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- police raleway 400 500 600 700 800 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <title>Reservia</title>
+</head>
+
+<body>
+    <!-- header logo dans navbar -->
+    <header>
+
+
+        <!-- site web sans tablette et phone -->
+        <div class="nav">
+            <div class="logo"><img src="images/Reservia.svg" alt="logo de Réservia site de réservation en ligne">
+            </div>
+            <ul>
+                <li class="hebergement"><a href="#hebergements">Hébergements</a></li>
+                <li class="activites"><a href="#activites">Activités</a></li>
+                <li class="inscription"><a href="#">Inscription</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- ---fin header---- -->
+
+    <!-- ---debut recherche et filtre---- -->
+
+    <section class="sous-nav" id="nav-recherche">
+        <h1 class="titre">Trouvez votre hébergement pour des vacances de rêve</h1>
+
+        <p class="slogan" id="slogan-1">En plein centre-ville ou en pleine nature</p>
+        <div class="barre-recherche">
+            <div class="icons">
+                <div class="recherche">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="search" placeholder="Marseille, France">
+                    <button class="boutton-rechercher">recherche</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="barre-filtre">
+            <div class="titre">
+                <p class="titre-filtre">Filtres</p>
+            </div>
+            <div class="boutton-filtre">
+                <!-- icons-filtre contien l'ensemble icons+ bordure -->
+                <i class="fa-solid fa-money-bill-wave "></i><span class="bordure-filtre">Economique</span>
+            </div>
+            <div class="boutton-filtre">
+                <!-- icons-filtre contien l'ensemble icons+ bordure -->
+                <i class="fa-solid fa-person homme"></i><span class="bordure-filtre">Familial</span>
+            </div>
+            <div class="boutton-filtre">
+                <!-- icons-filtre contien l'ensemble icons+ bordure -->
+                <i class="fa-solid fa-heart"></i><span class="bordure-filtre">Romantique</span>
+            </div>
+            <div class="boutton-filtre">
+                <!-- icons-filtre contien l'ensemble icons+ bordure -->
+                <i class="fa-solid fa-dog"></i><span class="bordure-filtre">Animaux autorisés</span>
+            </div>
+
+        </div>
+
+
+        <div class="itext"><i class="fa-solid fa-info "></i><span class="bordure-filtre">Plus de 500 logements sont
+                disponibles dans cette ville</span>
+        </div>
+    </section>
+<!-- debut section 3 vignette -->
+    <section class="hebergement-hotel">
+        <h1 class="titre">Hébergement à Marseille</h1>
+        <div class=" container-grille">
+            <div class="grille-75">
+                <div class="carte">
+                    <div class="container-img"></div>
+                    <div class="desc">
+                        <h2>Auberge la Cannebière</h2>
+                        <p>Nuit à partir de <br><span class="gras">25€</span></p>
+                        <div class="etoile-bleu">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star etoile-grise"></i>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carte">
+                    <div class="container-img-2" id="container-img"></div>
+                    <div class="desc-2">
+                        <h2>Hôtel du port</h2>
+                        <p>Nuit à partir de 52€</p>
+                        <div class="etoile-bleu-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="carte">
+                    <div class="container-img-3" id="container-img-2"></div>
+                    <div class="desc-3">
+                        <h2>Hôtel les mouettes</h2>
+                        <p>Nuit à partir de 76€</p>
+                        <div class="etoile-bleu-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star etoile-grise"></i>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grille-75">
+            <div class="carte">
+                <div class="container-img-4"></div>
+                <div class="desc-4">
+                    <h2>Auberge la Cannebière</h2>
+                    <p>Nuit à partir de <br><span class="gras">25€</span></p>
+                    <div class="etoile-bleu">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star etoile-grise"></i>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carte">
+                <div class="container-img-2" id="container-img"></div>
+                <div class="desc-2">
+                    <h2>Hôtel du port</h2>
+                    <p>Nuit à partir de 52€</p>
+                    <div class="etoile-bleu-2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="carte">
+                <div class="container-img-3" id="container-img-2"></div>
+                <div class="desc-3">
+                    <h2>Hôtel les mouettes</h2>
+                    <p>Nuit à partir de 76€</p>
+                    <div class="etoile-bleu-2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star etoile-grise"></i>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </section>
+</body>
+
+</html>
