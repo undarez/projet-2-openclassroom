@@ -1,0 +1,35 @@
+/* separation css et responsive */
+
+
+@media screen and (max-width: 1400px){
+    .hebergement-flex .container-grid-75 a{
+        height: 38%;
+    }
+
+    .container-grid-75 a:not(.container-grid-75 a:last-child){
+        width: 25%;
+    }
+    .carte-75{
+        height: 423px;
+    }
+    .carte-75 .img-content{
+        height: 57%;
+    }
+
+    
+
+    /* activity */
+    .grid-activity .card .querry{
+        height: 335px;
+    }
+
+ }
+
+/* fin média 1400px */
+
+ 
+
+/* debut media querry 992px */
+@media screen and (max-width: 992px){
+    
+}
