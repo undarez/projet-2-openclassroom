@@ -1,355 +1,309 @@
-/* debut media 2560 */
-@media screen and (max-width: 2560px){
-    .grid-activity .card .querry{
-        height: 335px;
-    }
-
-   
-}
-
-
-
-
-/* debut media 1024px */
-@media screen and (max-width: 1024px){ 
-    .carte-75{
-        height: 354px;
-    }
-
-    .carte-25{
-        flex-direction: column;
-        align-items: center;
-        max-height:auto;
-    }
-    
-    .carte-25 a{
-        flex-direction: column;
-        height: auto;
-        max-height: auto;
-    }
-
-    .grid-25{
-        
-        display: flex;
-    }
-    
-    .grid-25 .desc{
-        width: 100%;
-    } 
-
-    .grid-25 .desc h2{
-        font-size: 25px;
-    }
-
-    .grid-25 .desc p{
-        font-size: 20px;
-    }
-
-    .carte-25 .img-content{
-        width: 100%;
-        height: 180px;
-    }
-
-    .carte-25 .img-content img{
-        border-radius: 20px 20px 0 0;
-        
-    }
-
-
-    .grid-activity .card .querry{
-        height: 340px;
-    }
-
-    .footer-column .footer-992px{
-        padding-left: 23px;
-    }
-    
-}
- 
 
 /* debut media querry 992px */
-  @media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
 
-
-    .container-grid-75{
-        gap: 20px;
-        height: 1300px;
+    .container-grid-75 {
+        gap: 30px;
+        
     }
 
-    .container-grid-75 a:not(.container-grid-75 a:last-child){
+    .container-grid-75 a:not(.container-grid-75 a:last-child) {
         width: 30%;
-        
+
     }
+
     .carte-75{
-        
-        height: 360px;
-        
+        height: 290px
     }
-    .carte-75 .img-content{
+
+    .carte-75 a {
+        height: 100%;
+
+    }
+
+    .carte-75 .img-content {
         width: 100%;
     }
 
-    .desc h2{
+    .desc h2 {
         font-size: 23px;
     }
 
-    .desc p{
+    .desc p {
         font-size: 17px;
     }
 
-    .etoile-bleu{
+    .etoile-bleu {
         font-size: 15px;
     }
 
+    .flex-grid {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
     
-    
-    /* container hebergement 25% */
-
-    
-
-    .carte-25{
+    .carte-25 {
         flex-direction: column;
         align-items: center;
-        height: 320px;
-        width: 200px;
-        }
-
-        .carte-25 .img-content{
-            width: 100%;
-            height: 150px;
-        }
-    
-        .carte-25 .img-content img{
-            border-radius: 20px 20px 0 0;
-    
-        }
-
-        .grid-25 .desc{
-            width: 100%;
-        } 
-    
-        .desc .grid-25-h2{
-            font-size: 20px;
-        } 
-
-        .flex-grid{
-            display: flex;
-            flex-direction: column;
-            height: auto;
-        }
-
-        .container-grid-75{
-            width: 100%;
-        }
-        
-        /* grille 25%  */
-        .container-grid-25{
-            width: 100%;
-            
-            
-        }
-    
-        .grid-25 a{
-            width: 500px;
-        }
-    
-        .carte-25{
-            width: auto;
-        }
-
-    
-    
-    .grid-activity .card .querry{
-        height: 340px;
+        height: 20%;
+        width: 100%;
+        gap: 30px;
     }
 
-    .footer-column .footer-992px{
+    .carte-25 .img-content {
+        width: 100%;
+        height: 150px;
+    }
+
+    .carte-25 .img-content img {
+        border: 2px solid transparent;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .populaire i{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -17px;
+        margin-right: 30px;
+    }
+
+    .grid-25 .desc {
+        width: 100%;
+    }
+
+    .desc .grid-25-h2 {
+        font-size: 20px;
+    }
+
+    .container-grid-75 {
+        width: 100%;
+    }
+
+    .container-grid-25 {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .grid-25 {
+        width: 100%;
+        gap: 14px;
+        padding-top: 25px;
+        flex-direction: row;
+    }
+
+
+    .footer{
+        display: flex;
+        width: 100%;
+    }
+
+    .footer-column .footer-992px {
         padding-left: 23px;
     }
 
 }
 
+
+
+
 /* debut media 768px */
 
-@media screen and (max-width:768px)  {
-    .barre-filtre{
+@media screen and (max-width:768px) {
+    .barre-filtre {
         display: grid;
         justify-content: center;
         gap: 15px;
-        
     }
 
-    .barre-filtre .titre{
+    .barre-filtre .titre {
         display: grid;
         justify-content: center;
         margin-top: 20px;
     }
 
-    .flex-grid{
+    .flex-grid {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         height: auto;
+        justify-content: center;
     }
 
-  
+    /* container 75 */
+    .container-grid-75{
+        width: 100%;
+        padding: 10px;
+        
+    }
 
-    
+    .carte-75 h2{
+        font-size: 60%;
+    }
 
-   
+    .carte-75 p{
+        font-size: 15px;
+    }
 
-    .footer-column .footer-992px{
+    .etoile-bleu{
+        font-size: 12px;
+    }
+
+    .carte-75{
+        height: 200px;
+    }
+    /* les plus populaires */
+
+    .container-grid-25{
+        width: 100%;
+    }
+
+    .carte-25{
+        height: 160px;
+    }
+
+    .carte-25 .etoile-bleu{
+        margin-top: 5px;
+        font-size: 8px;
+        
+    }
+        
+    .footer{
+        display: flex;
+        width: 90%;
+        margin-left: 38px;
+    }
+
+    .footer-column .footer-992px {
         padding-left: 23px;
     }
 
+}
+    /* fin media 768px */
 
-    /* debut de fin querry */
-    @media  screen and (max-width:683px) {
-        .flex-grid{
+    /* début reste de media 767px à 319px */
+
+    @media screen and (max-width:767px) and (min-width:319px){
+        .nav{
+            display:block;
+            justify-content: center;
+        }
+
+        .logo{
             display: flex;
-            flex-direction: column;
-            height: auto;
-        }
-
-        .barre-filtre{
-            display: grid;
-            flex-direction: column;
-            gap: 15px;
-            
-        }
-
-        .carte-75{
-            width: 240px;
-        }
-    }
-
-    @media screen and (max-width:603px) {
-
-        .carte-75{
-            width: 200px;
-        }
-
-        .footer-column h2{
-            font-size: 25px;
-        }
-    }
-
-    @media screen and (max-width:523px){
-        .carte-75{
-            width: 180px;
-        }
-
-        .carte-25{
-            width: 285px;
-            
-        }
-
-        .carte-25 a{
+            justify-content: center;
             align-items: center;
         }
 
-        .carte-25 .img-content{
-            width: 270px;
-            
-            
-        }
-
-        .grid-25-h2{
-           display: flex;
-           justify-content: center;
-        }
-        .grid-25-p{
-            display: flex;
-            justify-content: center;
-        }
-        .etoile-bleu{
-            display: flex;
-            justify-content: center;
-        }
-        .etoile-grise{
-            display: flex;
-            justify-content: center;
-        }
-
-        .grid-activity{
-            flex-direction: column;
-            margin-top: 300px;
-            width: 400px;
-        }
-
-        .grid-activity.card{
-            width: 373px;
-            
-        }
-
-        .activity{
-            background: none;
-        }
-
-        .activity-container{
-            height: 1800px;
-        }
-
-        .footer-column h2{
-            font-size: 21px;
-        }
-
-        .footer-column-link{
-            font-size: 20px;
-        }
-        
-
-        
-    }
-
-    @media screen and (max-width:425px){
-
-        .boutton-rechercher{
-            width: 100px;
-        }
-        
-        .recherche-txt{
-            display: flex;
-            font-size: 17px;
-            justify-content: center;
-        }
-
-        .nav{
-            padding: 10px;
-        }
         .logo img{
-            height: 50px;
-            width: 90px;
+            width: 140px;
+        }
+
+        .nav ul{
+            margin-top: 30px;
+            justify-content: space-between;
+        }
+
+        .nav ul li a{
+            font-size: 30px;
+        }
+
+        header ul li a:hover {
+            padding-top: 120px;
+        }
+
+        .barre-recherche{
+            width: 100%;
+            justify-content: center;
+        }
+
+        .recherche button{
+            padding: 0;
+        }
+
+        .recherche input{
+            width: 100%;
+        }
+
+        .sous-nav .icons{
+            padding: 30px 19px;
+        }
+
+        .sous-nav .icons .loupe{
+            background: transparent;
+            display: inline;
+        }
+
+        .recherche-txt{
+            display: none;
+        }
+
+        .barre-filtre{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+
+        .barre-filtre .titre-filtre{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .boutons{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .boutons a{
+            width: 50%;
         }
 
         .flex-grid{
-            width: 415px;
-
+            flex-direction: column-reverse;
         }
 
-        .container-grid-75{
-            width: 100%;
+        .grid-25, .container-grid-75{
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .carte-25, .carte-75{
+            width: 75%;
+        }
+
+        .carte-75{
+            height: auto;
+        }
+
+        .carte-75 img{
+            height: 200px;
+        }
+
+        .carte-75 .desc h2{
+            font-size: 25px;
+        }
+        .carte-75 .desc p, .etoile-bleu{
+            font-size: 18px;
+        }
+
+        .activity-container{
+            margin-bottom: 40px;
+        }
+
+        .container-footer{
+            flex-direction: column;
         }
         
-        .carte-75{
-            width: 150px;
-            height: 320px;
+        .grid-activity{
+            flex-direction: column;
+            align-items: center;
         }
 
-        .activity{
-            padding: 0
+        .grid-activity .column-1, .container-column-2{
+            width: 75%;
+            height: 50%;
         }
 
-        .footer{
-            width: 500px;
-        }
 
-        .footer-column h2{
-            font-size: 10px;
-        }
-
-        .footer-column-link{
-            font-size: 10px;
-        }
     }
-
-}
