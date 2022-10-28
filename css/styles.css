@@ -6,11 +6,13 @@
     --text-color-3: #deebfc;
     --bacground-1: #f2f2f2;
     --etoile-grise: #dadada;
+    --color-white: #ffffff;
     --p-font: 17px;
     --p-font-2: 19px;
     --h2-font: 20px;
 }
-
+/* parametre page web *=toute la page reset des parametres */
+/* before = avant after=apres */
 *,
 ::before,
 ::after {
@@ -29,7 +31,7 @@ body {
     position: relative;
     justify-content: space-between;
 }
-
+/* taille max largeur page web */
 .main-content {
     max-width: 1400px;
     margin: 0 auto;
@@ -41,7 +43,7 @@ a {
 
 /* logo taille */
 
-
+/* liste non organiser */
 header ul {
     display: flex;
     position: relative;
@@ -52,6 +54,7 @@ header ul li {
     font-family: var(--font-family-1);
     font-weight: 600;
     cursor: pointer;
+    font-size: 17px;
     transition: 0.3s ease-in-out;
 }
 
@@ -64,7 +67,7 @@ header ul li a {
 header ul li a:hover {
     transition: 0.25s;
     border-top: 4px solid #0065fc;
-    padding-top: 90px;
+    padding-top: 70px;
     font-weight: 800;
     color: var(--text-color-2);
 }
@@ -79,7 +82,7 @@ header ul li a:hover {
 
 
 .logo img {
-    width: 140%;
+    width: 40%;
 }
 
 /*----fin header----*/
@@ -111,7 +114,7 @@ header ul li a:hover {
     color: var(--text-color-1);
     display: flex;
 }
-
+/* icons filtres */
 .sous-nav icons {
     padding-top: 20px;
     display: flex;
@@ -123,13 +126,13 @@ header ul li a:hover {
 .sous-nav i {
     display: flex;
     width: 50px;
-    height: 30px;
+    
 }
 
 .sous-nav .icons i {
     padding: 24px 19px;
     align-items: center;
-    background: var(--color-grey);
+    background: var(--bacground-1);
     border-radius: 10px 0 0 10px;
 }
 
@@ -146,7 +149,7 @@ header ul li a:hover {
 .sous-nav .icons .loupe {
     display: none;
 }
-
+/* text conteneur de input */
 .recherche input {
     display: flex;
     width: 250px;
@@ -185,7 +188,6 @@ header ul li a:hover {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
     height: 100%;
 }
 
@@ -208,13 +210,14 @@ header ul li a:hover {
 /* filtre text */
 .barre-filtre .titre {
     font-size: 22px;
+    padding-top: 15px;
 }
 
 .boutton-filtre {
     margin-left: 13px;
     display: flex;
     align-items: center;
-    border: 2px solid #c9d8ee;
+    border: 2px solid #d9d9d9;
     height: 48px;
     border-radius: 999px;
     border-left: none;
@@ -223,26 +226,22 @@ header ul li a:hover {
 
 .boutton-filtre:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 35px #2727278e;
-    transition: all 0.36;
-    background: var(--etoile-grise);
+    box-shadow: 8px 8px 15px -3px rgba(0, 0, 0, 0.81);
+    transition: all 0.36s;
+    background: #deebff;
 }
 
-.bordure-filtre:hover {
-    color: var(--text-color-2);
-    transform: scale(1.05);
-    transition: all 0.36s;
-}
+
 
 /* taille contour des icons */
 .boutton-filtre i {
     align-items: center;
-    background: var(--text-color-3);
+    
     border-radius: 50%;
     width: 48px;
     height: 48px;
     padding: 20px 17px;
-    border: 1px solid #c9d8ee;
+    
 }
 
 .boutton-filtre span {
@@ -272,11 +271,13 @@ header ul li a:hover {
 .itext i {
     display: flex;
     align-items: center;
-    border: 2px solid #c9d8ee;
+    justify-content: center;
+    border: 1px solid #d9d9d9;
     height: 46px;
     width: 46px;
     border-radius: 50%;
     padding: 17px;
+    color: var(--text-color-2);
 }
 
 .itext span {
@@ -313,6 +314,8 @@ header ul li a:hover {
     font-family: var(--font-family-1);
     font-size: 30px;
     font-weight: 700;
+
+    margin-left: 40px;
 }
 
 /* conteneur des vignette */
@@ -321,11 +324,14 @@ header ul li a:hover {
     justify-content: center;
     width: 75%;
     flex-wrap: wrap;
-    padding: 40px;
     border-radius: 20px;
-    background: var(--etoile-grise);
     gap: 20px;
+    background: #f2f2f2;
 }
+
+
+
+
 
 
 
@@ -334,17 +340,19 @@ header ul li a:hover {
 /* conteneur vignette */
 .carte-75 {
     align-items: center;
-    width: 30%;
-    height: 30%;
+    width: 250px;
+    height: 180px;
     padding: 5px;
     border-radius: 20px;
     transition: all .35s;
-    border: 1px solid #c9d8ee;
-    background: var(--bacground-1);
+    background: var(--color-white);
 }
 
 .carte-75 a {
     height: 100%;
+}
+.info{
+    margin-left: 40px;
 }
 
 .carte-75 .img-content {
@@ -405,7 +413,7 @@ header ul li a:hover {
     height: auto;
     padding: 40px;
     border-radius: 20px;
-    background: var(--etoile-grise);
+    background: #f2f2f2;
 }
 
 /* titre les plus populaire */
@@ -425,7 +433,7 @@ header ul li a:hover {
 .grid-25 {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 90%;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
@@ -438,10 +446,10 @@ header ul li a:hover {
 .carte-25 {
     display: flex;
     width: 100%;
-    height: 22%;
+    height: 35%;
     max-height: 500px;
     padding: 5px;
-    background: var(--bacground-1);
+    background: var(--color-white);
     border-radius: 20px;
     flex-direction: row;
     transition: all 0.36s;
@@ -471,7 +479,7 @@ header ul li a:hover {
 
 .carte-25 .desc h2 {
 
-    font-size: 90%;
+    font-size: 14px;
 }
 
 .carte-25 .desc p {
@@ -598,6 +606,7 @@ header ul li a:hover {
 .grid-activity .card {
     width: 100%;
     height: 100%;
+    background: var(--color-white);
 }
 
 .grid-activity .card .img-content {
@@ -628,7 +637,7 @@ header ul li a:hover {
 /* container talle du background */
 .footer {
     width: 100%;
-    background: var(--etoile-grise);
+    background: var(--bacground-1);
     transition: all 0.4s ease-in-out;
 }
 
@@ -646,8 +655,7 @@ header ul li a:hover {
 }
 
 .footer-column h2 {
-    text-align: center;
-    padding: 20px 0;
+    padding: 10px;
     font-size: 30px;
     font-family: var(--font-family-1);
     font-weight: 800;
@@ -657,14 +665,15 @@ header ul li a:hover {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-around;
     font-family: var(--font-family-1);
     font-size: 25px;
     font-weight: 500;
-    padding: 10px 0;
+    padding: 10px;
     transition: all 0.36s;
 
 
 }
+
+
 
 /* fin p-2  */

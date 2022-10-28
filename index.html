@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <!-- fichier pour les média querry 1400px et 992px -->
     <link rel="stylesheet" href="media-querry.css">
 
@@ -32,6 +32,8 @@
 
 
     <!-- header logo dans navbar -->
+
+    <!-- main-content = max-width 1400px  -->
     <div class="main-content">
         <header>
 
@@ -41,8 +43,8 @@
                 <div class="logo"><img src="images/Booki.png" alt="logo de Réservia site de réservation en ligne">
                 </div>
                 <ul>
-                    <li class="hebergement"><a href="#hebergements">Hébergements</a></li>
-                    <li class="activites"><a href="#activities">Activités</a></li>
+                    <li class="hebergement"><a href="#__grid-75">Hébergements</a></li>
+                    <li class="activites"><a href="#activity">Activités</a></li>
                 </ul>
             </div>
 
@@ -67,7 +69,7 @@
                     </div>
                 </div>
             </div>
-
+            <br>
             <div class="barre-filtre">
                 <div class="titre">
                     <p class="titre-filtre">Filtres</p>
@@ -120,7 +122,7 @@
             <!-- container global des 2 grilles -->
             <div class="flex-grid">
                 <!-- premiere grille 75% -->
-                <div class="container-grid-75">
+                <div id="__grid-75" class="container-grid-75">
                     <h1 class="marseille">Hébergement à Marseille</h1>
                     <div class="carte-75">
                         <a href="#hebergements">
@@ -131,7 +133,7 @@
                                 <h2>Auberge la Cannebiere</h2>
                                 <p>Nuit à partir de <span class="euro">25€</span></p>
 
-                                <div class="etoile-bleu">
+                                <div id="bleu-1" class="etoile-bleu">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -152,7 +154,7 @@
                                 <h2>Hotel du port</h2>
                                 <p>Nuit à partir de 52€</p>
 
-                                <div class="etoile-bleu">
+                                <div id="bleu-2" class="etoile-bleu">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -174,7 +176,7 @@
                                 <h2>Hôtel les mouettes</h2>
                                 <p>Nuit à partir de 76€</p>
 
-                                <div class="etoile-bleu">
+                                <div id="bleu-3" class="etoile-bleu">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -197,7 +199,7 @@
                                 <h2>Hotel de la mer</h2>
                                 <p>Nuit à partir de 46€</p>
 
-                                <div class="etoile-bleu">
+                                <div id="bleu-4" class="etoile-bleu">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -220,7 +222,7 @@
                                 <h2>Auberge le Panier</h2>
                                 <p>Nuit à partir de <span class="euro">23€</span></p>
 
-                                <div class="etoile-bleu">
+                                <div id="bleu-5" class="etoile-bleu">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -243,7 +245,7 @@
                                 <h2>Hotel chez Amina</h2>
                                 <p>Nuit à partir de 96€</p>
 
-                                <div class="etoile-bleu">
+                                <div id="bleu-6" class="etoile-bleu">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -263,6 +265,7 @@
 
                 <div class="container-grid-25">
                     <h2 class="populaire">Les plus populaire <i class="fa-solid fa-chart-line"></i> </h2>
+                    <br><br>
                     <div class="grid-25">
                         <div class="carte-25">
                             <a href="#hebergements">
@@ -270,10 +273,10 @@
                                     <img src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre d'hotel">
                                 </div>
                                 <div class="desc">
-                                    <h2 class="grid-25-h2">hotel le soleil du matin</h2>
+                                    <h2 class="grid-25-h2">hotel le soleil <br> du matin</h2>
                                     <p class="grid-25-p">Nuit à partir de 128€</p>
 
-                                    <div class="etoile-bleu">
+                                    <div id="bleu-1" class="etoile-bleu">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
@@ -284,7 +287,9 @@
                                 </div>
                             </a>
                         </div>
+                        <br>
                         <div class="carte-25">
+
                             <a href="#hebergements">
                                 <div class="img-content">
                                     <img src="images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre d'hotel">
@@ -293,7 +298,7 @@
                                     <h2 class="grid-25-h2">Au coeur de l'eau <br> Chambres d'hotes</h2>
                                     <p class="grid-25-p">Nuit à partir de 71€</p>
 
-                                    <div class="etoile-bleu">
+                                    <div id="bleu-2" class="etoile-bleu">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
@@ -304,6 +309,7 @@
                                 </div>
                             </a>
                         </div>
+                        <br>
                         <div class="carte-25">
                             <a href="#hebergements">
                                 <div class="img-content">
@@ -313,10 +319,10 @@
                                 </div>
 
                                 <div class="desc">
-                                    <h2 class="grid-25-h2">Hôtel tout bleu et blanc</h2>
+                                    <h2 class="grid-25-h2">Hôtel tout bleu <br> et blanc</h2>
                                     <p class="grid-25-p">Nuit à partir de 68€</p>
 
-                                    <div class="etoile-bleu">
+                                    <div id="bleu-3" class="etoile-bleu">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
@@ -327,6 +333,7 @@
                                 </div>
                             </a>
                         </div>
+                        <br>
                     </div>
                 </div>
             </div>
@@ -339,12 +346,12 @@
 
         <section>
             <div class="activity-container">
-                <div class="activity">
+                <div id="activity" class="activity">
                     <h2>Activités à Marseille</h2>
                     <div class="grid-activity">
-                        <div class="column-1">
+                        <div id="port" class="column-1">
                             <div class="card full-h-1">
-                                <a href="page.html">
+                                <a href="#activities">
                                     <div class="img-content">
                                         <img src="images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port" />
                                     </div>
@@ -354,36 +361,19 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="container-column-2">
-                            <div class="column-2 ">
-                                <div class="card">
-                                    <a href="page.html">
-                                        <div class="img-content querry">
-                                            <img src="images/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                                                alt="Fort de Pomègues" />
-                                        </div>
-                                        <div class="desc-2">
-                                            <h1>Fort de Pomègues</h1>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="column-2">
-                                <div class="card ">
-                                    <a href="page.html">
-                                        <!-- querry sert a réglé la taille en en mode media -->
-                                        <div class="img-content querry ">
-                                            <img src="images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                                                alt="Île de Frioul" />
-                                        </div>
-                                        <div class="desc-2">
-                                            <h1>ile de Frioul</h1>
-                                        </div>
-                                    </a>
-                                </div>
+                        <div id="port" class="column-1">
+                            <div class="card full-h-1">
+                                <a href="#activities">
+                                    <div class="img-content">
+                                        <img src="images/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Vieux port" />
+                                    </div>
+                                    <div class="desc-2">
+                                        <h1>Fort de Pomègues</h1>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                        <div class="column-1">
+                        <div id="parc-national" class="column-1">
                             <div class="card full-h-2">
                                 <a href="page.html">
                                     <div class="img-content">
@@ -396,34 +386,16 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="container-column-2">
-                            <div class="column-2 ">
-                                <div class="card">
-                                    <a href="page.html">
-                                        <!-- querry sert a réglé la taille en en mode media -->
-                                        <div class="img-content querry">
-                                            <img src="images/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                                                alt="Notre-Dame-de-la-Garde" />
-                                        </div>
-                                        <div class="desc-2">
-                                            <h1>Notre-Dame-de-la-Garde</h1>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="column-2">
-                                <div class="card">
-                                    <a href="page.html">
-                                        <!-- querry sert a réglé la taille en en mode media -->
-                                        <div class="img-content querry">
-                                            <img src="images/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                                                alt="Parc Longchamp" />
-                                        </div>
-                                        <div class="desc-2">
-                                            <h1>Parc Longchamp</h1>
-                                        </div>
-                                    </a>
-                                </div>
+                        <div id="port" class="column-1">
+                            <div class="card full-h-1">
+                                <a href="#activities">
+                                    <div class="img-content">
+                                        <img src="images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Vieux port" />
+                                    </div>
+                                    <div class="desc-2">
+                                        <h1>Notre-Dame-de-la-garde</h1>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -439,18 +411,18 @@
         <footer class="footer">
             <div class="container-footer">
                 <div class="footer-column">
-                    <h2>Â-propos</h2>
+                    <h2 id="--a-propos">Â-propos</h2>
                     <a href="#" class="footer-column-link footer-992px ">Fontionnement du site</a>
                     <a href="#" class="footer-column-link footer-992px">Conditions générales de vente</a>
                     <a href="#" class="footer-column-link footer-992px">Données et confidentialités</a>
                 </div>
-                <div class="footer-column">
-                    <h2>Nos bébergement</h2>
+                <div id="footer-2" class="footer-column">
+                    <h2 id="--hebergement">Nos hébergements</h2>
                     <a href="#" class="footer-column-link">Charte qualité</a>
                     <a href="#" class="footer-column-link">Soumettre votre hotel</a>
                 </div>
-                <div class="footer-column">
-                    <h2>Assitance</h2>
+                <div id="footer-3" class="footer-column">
+                    <h2 id="assitance">Assistance</h2>
                     <a href="#" class="footer-column-link">Centre d'aide</a>
                     <a href="mailto:test@test.com" class="footer-column-link">Nous contacter</a>
                 </div>
