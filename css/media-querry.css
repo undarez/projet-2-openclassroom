@@ -100,14 +100,26 @@
 
 @media screen and (max-width:768px) {
 
-    .main-content{
+    .main-content {
         width: 100%;
     }
 
-    header ul li a:hover{
+    header ul li {
+        padding: 0;
+    }
+
+    header ul li a {
+        font-size: 14px;
+    }
+
+    header ul li a:hover {
         border-bottom: 4px solid #0065fc;
         border-top: 0;
         padding-bottom: 20px;
+    }
+
+    .titre {
+        font-size: 20px;
     }
 
     .nav {
@@ -116,7 +128,7 @@
         align-items: center;
     }
 
-    .logo{
+    .logo {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -125,32 +137,33 @@
         padding-bottom: 30px;
     }
 
-    .logo img{
+    .logo img {
         width: 70%;
     }
 
-    .hebergement{
-        padding-right: 90px;
+    .hebergement {
+        padding-right: 69px;
     }
 
-    .barre-recherche{
+    .barre-recherche {
         justify-content: center;
     }
 
-    .recherche input{
+    .recherche input {
         width: 63%;
+        font-size: 12px;
     }
 
-    .recherche-txt{
+    .recherche-txt {
         display: none;
     }
 
-    .sous-nav .icons .loupe{
+    .sous-nav .icons .loupe {
         display: block;
         padding-right: 30px;
     }
 
-    .boutton-rechercher{
+    .boutton-rechercher {
         width: 20%;
     }
 
@@ -162,13 +175,18 @@
 
 
     .barre-filtre .boutons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         width: 100%;
     }
 
     .boutons a {
-        width: 32%;
+        width: 100%;
+    }
 
+    .boutons a span{
+        font-size: 12px;
     }
 
     .boutons {
@@ -176,6 +194,10 @@
         width: 87%;
         gap: 20px;
         flex-wrap: wrap;
+    }
+
+    .boutton-filtre {
+        width: 100%;
     }
 
     .boutton-filtre span {
@@ -195,37 +217,42 @@
         font-size: 10px;
     }
 
-    .hebergement-flex{
+    /* .hebergement-flex{
         padding: 0;
-    }
+    } */
 
-    .container-grid-25{
+    .container-grid-25 {
         border-radius: 0;
-        width: 105%;
+        width: 100%;
+        padding: 20px;
     }
 
-    .container-grid-25 .populaire{
+    .container-grid-25 .populaire {
         font-size: 22px;
     }
 
-    .grid-25{
+    .container-grid-25 .populaire{
+        font-size: 20px;
+    }
+
+    .grid-25 {
         flex-direction: column;
         height: 100%;
     }
 
-    .carte-25{
-        width: 60%;
+    .carte-25 {
+        width: 100%;
     }
 
-    .carte-25 .desc .etoile-bleu{
+    .carte-25 .desc .etoile-bleu {
         padding-top: 10px;
     }
 
-    .marseille{
+    .marseille {
         font-size: 22px;
     }
 
-    .container-grid-75{
+    .container-grid-75 {
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -234,47 +261,47 @@
         background: var(--color-white);
     }
 
-    .carte-75{
+    .carte-75 {
         width: 50%;
-        
+
     }
 
-    .activity h2{
+    .activity h2 {
         font-size: 22px;
     }
 
-    .grid-activity{
+    .grid-activity {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 50px;
     }
 
-    .column-1{
+    .column-1 {
         height: 383px;
         width: 70%;
     }
 
-    .main-content-footer{
+    .main-content-footer {
         padding: 0 11px;
     }
 
-    .footer{
+    .footer {
         flex-direction: column;
         width: 105%;
     }
 
 
 
-    .footer-column h2{
+    .footer-column h2 {
         font-size: 20px;
     }
 
-    .footer-column-link{
+    .footer-column-link {
         font-size: 17px;
     }
 
-    
+
 
 }
 
