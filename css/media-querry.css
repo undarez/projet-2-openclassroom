@@ -1,6 +1,5 @@
 /* * { background: rgb(0 0 100/0.3); } permet de voir quelle div depasse e son container */
 /* * { background: rgb(0 0 100/0.3) !important; } */
-
 :root {
     --font-family-1: 'Raleway', sans-serif;
     --color-grey: #cecece;
@@ -17,7 +16,6 @@
 
 /* 992 = tablette */
 @media screen and (max-width: 992px) {
-
     .barre-filtre {
         width: 100%;
     }
@@ -26,7 +24,6 @@
         margin-left: 7px;
         width: 90%;
     }
-
 
     .barre-filtre .boutons {
         justify-content: center;
@@ -66,7 +63,7 @@
     }
 
     .flex-grid {
-        flex-direction: column-reverse;
+        flex-direction: column;
         width: 100%;
     }
 
@@ -88,11 +85,11 @@
         width: 35%;
     }
 
-    .carte-25 .desc h2{
+    .carte-25 .desc h2 {
         font-size: 11px;
     }
 
-    .carte-25 .etoile-bleu{
+    .carte-25 .etoile-bleu {
         padding-top: 50px;
     }
 
@@ -100,7 +97,6 @@
 
 /* 768 = phone */
 @media screen and (max-width:768px) {
-
     .main-content {
         width: 100%;
     }
@@ -146,11 +142,15 @@
         padding-right: 69px;
     }
 
+    .hebergement-flex {
+        padding: 0;
+    }
+
     .barre-recherche {
         justify-content: center;
     }
 
-    .recherche button{
+    .recherche button {
         width: 60px;
     }
 
@@ -188,7 +188,7 @@
         width: 100%;
     }
 
-    .boutons a span{
+    .boutons a span {
         font-size: 12px;
     }
 
@@ -230,7 +230,7 @@
         font-size: 22px;
     }
 
-    .container-grid-25 .populaire{
+    .container-grid-25 .populaire {
         font-size: 20px;
     }
 
@@ -254,18 +254,27 @@
     .container-grid-75 {
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 96%;
         height: 100%;
         flex-wrap: nowrap;
         background: var(--color-white);
     }
 
     .carte-75 {
-        width: 50%;
+        width: 88%;
+        height: 250px;
+    }
+
+    .activity {
+        padding: 0;
     }
 
     .activity h2 {
         font-size: 22px;
+    }
+
+    .container-activity {
+        width: 96%;
     }
 
     .grid-activity {
@@ -275,9 +284,9 @@
         gap: 50px;
     }
 
-    .column-1 {
-        height: 383px;
-        width: 70%;
+    .grid-activity .column-1 {
+        height: 200px;
+        width: 100%;
     }
 
     .main-content-footer {
@@ -296,5 +305,4 @@
     .footer-column-link {
         font-size: 17px;
     }
-
 }
